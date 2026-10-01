@@ -1,0 +1,60 @@
+{
+  "name": "aurauth",
+  "version": "0.1.0",
+  "description": "Zero-boilerplate, self-hosted authentication for Express + MongoDB. Configure it in one file, mount it in one line.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "auth",
+    "authentication",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "refresh-token",
+    "session",
+    "rbac",
+    "bcrypt",
+    "argon2",
+    "zero-boilerplate",
+    "security"
+  ],
+  "author": "Sumit Chaudhary",
+  "license": "MIT",
+  "dependencies": {
+    "jose": "^5.9.6"
+  },
+  "peerDependencies": {
+    "express": ">=4.17.0",
+    "mongoose": ">=7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "mongoose": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.0.0"
+  }
+}
